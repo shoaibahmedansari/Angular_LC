@@ -1,0 +1,12 @@
+<div style="text-align: center">
+  <h1>
+    My App
+  </h1>
+  <div>
+    <button (click) ="decrement()">Subtract</button>
+    <app-child *ngIf="isVisible" [myNewNumber] ="counter" [myNumber2] = "user"></app-child>
+    <button (click) ="increment()">Addition</button><br>
+    <a (click) ="updateValue()">Update</a>
+    <button (click) ="switchVisibility()">show/hide</button>
+  </div>
+</div>
